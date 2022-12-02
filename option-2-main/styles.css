@@ -1,0 +1,395 @@
+/* MOBILE STYLES BELOW ----------------------- */
+body{
+  background: #97AB91;
+  margin: 0;
+  padding:0;
+  /* Leave the margin and padding to 0 */
+  box-sizing: border-box;
+  font-family: 'Open Sans', arial, sans-serif;
+}
+
+
+/* NOTE Start styles for logo------------------
+If the logo is in the navigation bar, you will find more logo styles lower down on this page that you might need to change */
+#logo{
+    /* NOTE If you change the font size then also look into changing the hamberger menu font size - You might want to keep them the same - but not too large. Check how it looks on your phone. */
+    font-size: 1.3em;
+    font-family: 'Bellota Text';
+    /* Change the size based on how long the name is for your company. If your name is too long, then move it ourside the nav bar. Look in the HTML for the h1 comments for help */
+    /* width:200px; */
+    display: block;
+    margin-bottom: 20px;
+}
+
+.subheading{
+    font-family: 'Kalam'
+}
+
+p{
+  line-height: 1.4;
+}
+
+.wrapper{
+  width:90%;
+  margin:auto;
+  /* NOTE This centers the site and keeps it from getting too close to the edge of the browser */
+}
+
+img{
+  max-width: 100%;
+}
+
+
+/* NOTE Add and change colors and font families */
+h1{
+  font-weight: 600;
+  letter-spacing: 3.5px;
+  font-size: 2em;
+  text-align: center;
+}
+
+h2{
+  font-family: 'Kalam', helvetica, sans-serif;
+
+}
+
+h3{
+
+}
+
+.hero-homepage img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    /* https://www.w3schools.com/cssref/css3_pr_object-fit.php */
+    background: darkgrey;
+
+}
+
+
+/* START Images with a caption along the bottom ------ */
+figure{
+	margin: auto 0;
+	position: relative;
+}
+figure img{
+    width:100%;
+    /* This will keep the image and the caption the same width. If your photo looks pixelated, you will need a hi-res image */
+}
+figcaption {
+    position: absolute;
+    bottom: -10px;
+    background: #354920;
+    height: 25px;
+    left: 50px;
+    width: 65%;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    font-family: 'Bellota Text';
+}
+/* END Images with a caption along the bottom styles ---*/
+
+
+
+/* START Image with text on the other side styles -------- */
+.image-on-left{
+    width: 100%;
+    margin: 50px auto;
+    text-align: left;
+}
+.image-on-left img{
+    float: left;
+    /* NOTE Position of image */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+.image-on-right{
+    width: 100%;
+    margin: 50px auto;
+    text-align: right;
+}
+.image-on-right img{
+    float: right;
+    /* NOTE Position of image */
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+.clear-float{
+    display: table;
+    content: "";
+    clear: both;
+}/* Do not remove the clear float from your code. This prevents the site from looking wrong b/c you are using floats. */
+/* END Image on one side and text on the other side styles ------------------------ */
+
+
+
+
+
+/* START footer ------------------------*/
+footer{
+  margin-top: 20px;
+  /* Adds space above the footer */
+  padding:10px;
+  /* Keeps footer text and images away from edge */
+  background: #999;
+  /* Footer background color */
+  color:white;
+}
+footer p{
+    text-align: center;
+}
+footer div{
+    text-align: center;
+}
+.footer-wrapper{
+  width:90%;
+  margin:auto;
+  /* This keeps content from getting too close to the right and left edge of the browser */
+}
+/* END Footer styles ------------------------ */
+
+
+
+
+
+/* NOTE Starting styles for logo if it is in the navigation bar as a link ---------- */
+nav #logo a{
+    display:inline;
+    /* Added this b/c once the logo was a link, i moved down and wasn't inline with the hamburget menu and other links */
+    padding-left:0px;
+    /* Added this b/c once it was a link it moved to the right too much. This lowers the left padding. */
+}
+/* NOTE START Mobile Navigation styles ------------- */
+.nav-grid{
+    display: grid;
+    min-height: 60px;
+    /* This could affect the amount of clickable space for users to toggle on the drop down menu. The larger the number then larger thumbs won't have a problem hiting this button */
+    grid-auto-flow: column;
+}
+/* Navigation bar styles */
+.mainNav {
+  background: #354920;
+  /* Change bar color */
+  color:#ffffff;
+  /* Text color - For hamburger and company name*/
+  height: 75px;
+  /* How tall the nav bar is -
+  NOTE This number needs to be in sync with the top number for .mainnav .menu below */
+  position: relative;
+}
+/* Navigation links styles */
+nav a{
+  display: block;
+  padding:20px;
+  text-decoration: none;
+  color: #fff;
+  /* NOTE LINK color for company name*/
+  /* font-family:  sans-serif; */
+}
+.mainNav a {
+  text-decoration: none;
+}
+.mainNav .menu {
+  background: #354920;
+  /* Change the bar color above */
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid #efefef;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  /*POSITION*/
+  position: absolute;
+  top: 75px;
+  /* NOTE Main nav height and this number need to be the same for drop down menu */
+  right: 0;
+  left: 0;
+}
+.mainNav .menu a {
+  color: #fff;
+  /* NOTE Link color for drop down */
+  border-bottom: 1px solid #efefef;
+  font-weight: normal;
+  /* Change to bold if you want */
+  display: block;
+  padding: 15px;
+  font-family: 'Kalam'
+}
+.mainNav .menu a:hover {
+  background: #292938;
+  /* NOTE Background color when hovering over links */
+  color: #efefef;
+  /* Color of text when hovering over link */
+}
+.mainNav .navBars {
+  display: inline-block;
+  font-size: 1.2em;
+  /* NOTE This will affect the thickness of the hamburger lines */
+  line-height: 1.5em;
+  float: right;
+  text-align: right;
+  /* HAMBURGER POSITION to the right*/
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+#xBxHack {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -99999px;
+}
+#xBxHack:checked ~ nav .menu {
+  display: block;
+}
+.navcontainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* NOTE END MOBILE NAVIGATION STYLES */
+
+
+
+
+
+
+
+
+
+/* END MOBILE STYLES  --------------------- */
+/* Medium size screen styles below -------- */
+@media only screen and (min-width: 700px) {
+
+  .hero-homepage img{
+      height: 500px;
+
+
+  }
+
+  .wrapper{
+    width:85%;
+    margin:auto;
+  }
+
+  .grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 50px;
+  }
+
+  .col{
+
+  }
+
+  /* Larger image for larger screens */
+  .image-on-left{
+      width: 100%;
+      margin: 50px auto;
+      text-align: left;
+  }
+  .image-on-left img{
+    float: left;
+    /* Larger image for larger screens */
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    margin-right: 40px;
+  }
+  .image-on-right{
+      width: 100%;
+      margin: 50px auto;
+      text-align: right;
+  }
+  .image-on-right img{
+    float: right;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    margin-left: 40px;
+  }
+  /* END Image on one side and text on the other side */
+
+
+
+
+
+  /* NOTE START Nav styles for medium and larger screens-----
+  Do not change nav styles below without help. */
+    .navcontainer{
+      display: grid;
+      min-height: 70px;
+      grid-auto-flow: column;
+      padding-top: 0;
+      padding-bottom: 0;
+      max-width:900px;
+  /*  You can change the max-width. This counter acts the styles above media query so the links could be all the way to the left */
+    }
+    .mainNav {
+      overflow: hidden;
+    }
+    .mainNav .navBars {
+      display: none;
+    }
+    #logo{
+        padding-top:10px;
+    }
+    #logo a{
+
+    }
+    .mainNav .menu {
+      display: block;
+      box-shadow: none;
+      border: none;
+      float: right;
+      /* float:left; */
+      /* NOTE LINKS POSITION to the left*/
+      /* text-align: center; */
+      /* NOTE LINKS POSITION center*/
+      text-align: right;
+      /* NOTE LINKS POSITION to the right*/
+      position: static;
+    }
+    .mainNav .menu li {
+      display: inline-block;
+    }
+    .mainNav .menu a {
+      border: none;
+      padding: 20px 10px;
+    }
+/* END nav styles ---------------------------- */
+
+
+
+
+
+
+
+
+}/* END Medium screen size styles
+Do not delete the curly bracket */
+/* Large Desktop styles below --------------------- */
+@media only screen and (min-width: 1200px) {
+
+    .wrapper{
+      max-width:900px;
+      /* This will keep the website from being too wide. */
+      margin:auto;
+    }
+
+
+
+
+
+
+}/* END Large Desktop styles
+Do not delete the curly bracket  --------------------- */
