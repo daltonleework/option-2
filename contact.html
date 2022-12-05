@@ -53,7 +53,7 @@
 		<!-- NOTE Use this h1 above if you want the company text BELOW the Nav bar  -->
 
 		<div class="hero-homepage">
-			<img src="images/babymonkey.jpg" alt="poophead">
+			<img src="images/2monkeys.png" alt="poophead">
 		</div>
 		<div class="wrapper">
 			<!-- NOTE the wrapper class will keep content from touching the edge of the screen. If you want something all the way across, like an image, you might need to enter that HTML before or after the wrapper div, or close the wrapper div, then add your code that you want to be edge to edge, then start the wrapper div again  -->
@@ -61,38 +61,51 @@
 			<div class="grid"><!-- Start grid - a row of two columns-->
 				<div class="col">
 
-					<h2>Welcome to The Ancient Collection</h2>
+					<h2>Contact The Ancient Collection</h2>
 
-					<p>Monkeys are intelligent animals with complex behavioral and social needs. Companionship, group living, appropriate space, and an enriched environment are all important for their physiological, behavioral, and psychological health. The focus of animal care at the primate sanctuary is to provide conditions in which the captive populations of macaques, baboons, and vervet species are allowed to live out the remainder of their lives with extensive freedom of movement, choice of food, and choice of companions in accordance with their social nature.</p>
+					<p>Your questions and inquiries are important to us. If you have one, please fill out the form below and expect a response from us the same business day.</p>
 
-					<figure>
-						<img src="images/huggingmonkeys.jpg" alt="Finn and Jake" />
-
-						<figcaption>
-						Click here to DONATE today!
-						</figcaption>
-					</figure>
-
-					<br>
-					<h2>Mission Statement</h2>
-					<p>We aim to provide a lifelong, high standard of care without being needlessly intrusive. Our facility is unique among U.S. sanctuaries in that it is one of the very few to provide large free-ranging environments that allow the majority of the monkeys to live as natural a life as possible with a minimal amount of human interference.</p>
+<br>
+					<p>
+<form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+return true; }
+</script>
+<table style="width:100%;max-width:550px;border:0;" cellpadding="8" cellspacing="0">
+<tr> <td>
+<label for="Name">Name*:</label>
+</td> <td>
+<input name="Name" type="text" maxlength="60" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="PhoneNumber">Phone number:</label>
+</td> <td>
+<input name="PhoneNumber" type="text" maxlength="43" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="FromEmailAddress">Email address*:</label>
+</td> <td>
+<input name="FromEmailAddress" type="text" maxlength="90" style="width:100%;max-width:250px;" />
+</td> </tr> <tr> <td>
+<label for="Comments">Comments*:</label>
+</td> <td>
+<textarea name="Comments" rows="7" cols="40" style="width:100%;max-width:350px;"></textarea>
+</td> </tr> <tr> <td>
+* - required fields
+</td> <td>
+<div style="float:right"><a href="https://www.100forms.com" id="lnk100" title="form to email">form to email</a></div>
+<input name="skip_Submit" type="submit" value="Submit" />
+<script src="https://www.100forms.com/js/FORMKEY:FSUBFJCEYC4R/SEND:my@email.com" type="text/javascript"></script>
+</td> </tr>
+</table>
+</form>
+</p>
 
 				</div><!-- end 1st columns-->
 
-				<div class="col">
-
-					<h2>YOU can help monkeys TODAY!</h2>
-					<p>Want to have a BIG impact? These are some of the biggest needs at our primate sanctuary -- items that make a huge difference in the lives of our monkey. By funding one of these needs you can improve enclosures, support veterinary care or medication, keep our monkeys entertained through enrichment, or help pay for the cost of feeding hundreds of monkeys each day. Ask about plaque and naming opportunities if you want your loved one honored at the primate sanctuary.</p>
-
-					<h2>A Sad Truth</h2>
-
-					<p>Sadly, one of the biggest reasons people are less likely to think that chimpanzees and orangutans are endangered is because they see them so often in movies and TV. According to the Association of Zoos and Aquariums, “Dressing apes in human clothing, or training them to engage in unnatural (usually human) behaviors, while entertaining to some, inaccurately portrays their biology and conservation status. Since conservation efforts rely on informed public opinion, these practices serve to undermine communications vital to achieving conservation.” Great apes used in entertainment are most often babies or juveniles. Infant apes are used because adolescent and adult orangutans and chimpanzees are too strong and unmanageable, and therefore too dangerous to work around the public or around actors on sets. Many of the great apes that reside at The Ancient Collection have been retired from the entertainment industry. Primate trainers working in all fields claim to use only positive reinforcement while working with their animals. However, many of the animals used in films and advertisements are trained to perform natural fear responses, such as “smiling” in chimpanzees. People often mistake fear responses as signs of happiness, failing to realize that the actions taken to make an animal perform can be truly horrifying.</p>
-
-
-
-				</div><!-- end 2nd columns-->
-
-			</div> <!-- END grid row of columns-->
 
 
 		</div><!--NOTE END wrapper-->
